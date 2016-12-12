@@ -1,0 +1,20 @@
+{
+  "name": "first-express",
+  "version": "0.1.0",
+  "description": "Testing out Express.",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Checarlos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.15",
+    "nunjucks": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
