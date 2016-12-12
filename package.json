@@ -10,7 +10,9 @@
   "author": "Checarlos",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.1.4",
     "express": "^4.14.0",
+    "feed-read": "0.0.1",
     "mongodb": "^2.2.15",
     "nunjucks": "^3.0.0"
   },

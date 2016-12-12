@@ -1,0 +1,19 @@
+#main-container {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.comic {
+    margin-bottom: 50px;
+}
+
+.comic img {
+    display: block;
+    margin: 0 auto
+}
+
+.comic h1 {
+    background-color: #31022e;
+    color: white;
+    padding: 0 0 3px 10px;
+}

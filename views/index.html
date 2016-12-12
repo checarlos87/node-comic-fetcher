@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div>
-        <h2>xkcd Latest</h2>
+    <div class="comic">
+        <h1>xkcd Latest</h1>
         <img src={{ xkcd_latest }} />
+    </div>
+    <div class="comic">
+        <h1>Whomp Latest</h1>
+        {{ whomp_latest | safe }}
+    </div>
+    <div class="comic">
+        <h1>Twogag Latest</h1>
+        {{ twogag_latest | safe }}
     </div>
 {% endblock %}
