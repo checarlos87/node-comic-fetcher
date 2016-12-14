@@ -11,7 +11,7 @@ Please support the three comics referenced in this app:
 ## Installation
 
 ```
-$ git clone git@github.com:checarlos87/node-comic-fetcher.git
+$ git clone https://github.com/checarlos87/node-comic-fetcher.git
 $ cd node-comic-fetcher/
 $ npm install
 ```
