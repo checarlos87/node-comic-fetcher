@@ -10,6 +10,8 @@ nunjucks.configure('views', {
     express: app
 })
 
+var port = process.argv[2]
+
 app.use(express.static('public'))
 
 app.get('/', (req, res, next) => {
@@ -114,7 +116,9 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something went wrong!')
 })
 
-app.listen(8001)
+app.listen(port, () => {
+    console.log('Listening on port ' + port)
+})
 
 
 

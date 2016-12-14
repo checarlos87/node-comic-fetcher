@@ -4,7 +4,7 @@
   "description": "Testing out Express.",
   "main": "index.js",
   "scripts": {
-    "nodemon": "nodemon app.js",
+    "nodemon": "nodemon app.js 8001",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Checarlos",

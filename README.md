@@ -17,8 +17,11 @@ $ npm install
 ```
 
 ## Running
+
+Choose a port number, then run:
+
 ```
-node app.js
+node app.js <port number>
 ```
 
-Point your browser to localhost:8001.
+Then point your browser to localhost:\<port number>
