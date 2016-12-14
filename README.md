@@ -12,9 +12,8 @@ Please support the three comics referenced in this app:
 
 ```
 $ git clone git@github.com:checarlos87/node-comic-fetcher.git
-$ cd first-express/
+$ cd node-comic-fetcher/
 $ npm install
-
 ```
 
 ## Running
