@@ -1,6 +1,6 @@
 # Node Comic Fetcher
 
-This app was created as a simple node exercise that illustrates the use of Express and Nunjucks.
+This app was created as a simple node exercise that illustrates the use of Express and Nunjucks.  xkcd is fetched through a JSON file the author publishes and Whomp and Twogag are fetched through their respective RSS feeds.
 
 Please support the three comics referenced in this app:
 
