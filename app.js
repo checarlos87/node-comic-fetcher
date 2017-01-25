@@ -2,6 +2,7 @@ const async = require('async')
 const express = require('express')
 const feed = require('feed-read')
 const http = require('http')
+const https = require('https')
 const nunjucks = require('nunjucks')
 
 const app = express()
@@ -22,14 +23,14 @@ app.get('/', (req, res, next) => {
 
         // xkcd
         xkcd: (callback) => {
-            http.get('http://xkcd.com/info.0.json', (response) => {
+            https.get('https://xkcd.com/info.0.json', (response) => {
         
                 var statusCode = response.statusCode
                 var contentType = response.headers['content-type']
         
                 let error
                 if (statusCode !== 200)
-                    error = new Error(`Error: ${statusCode}`)
+                    error = new Error(`Error retrieving xkcd: ${statusCode}`)
         
                 else if (!/^application\/json/.test(contentType))
                     error = new Error(`Expected content-type application/json, ` +
@@ -59,7 +60,7 @@ app.get('/', (req, res, next) => {
                 })
         
             }).on('error', (e) => {
-                console.log(`HTTP GET of xkcd JSON failed: ${e.message}`)
+                console.log(`HTTPS GET of xkcd JSON failed: ${e.message}`)
                 callback(e)
             })
 
@@ -99,7 +100,7 @@ app.get('/', (req, res, next) => {
 
         if (err) {
             console.log('Error in async.parallel:', err.message)
-            next(err)
+            return next(err)
         }
 
         context['xkcd_latest'] = results['xkcd']
